@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap 5 Comprehensive Exercises</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <style>
+    body { background: #f8f9fa; }
+    .demo-section { margin-bottom: 3rem; }
+  </style>
+</head>
+<body>
+<div class="container py-4">
+  <h1 class="mb-4 text-center">Bootstrap 5 Exercises - All Tasks</h1>
+
+  <!-- 1. Setting Up Bootstrap 5 -->
+  <section class="demo-section">
+    <h2>1. Setting Up Bootstrap 5</h2>
+    <div class="alert alert-info">Bootstrap 5 is loaded via CDN (see <code>&lt;head&gt;</code>).</div>
+    <div class="alert alert-secondary">
+      <strong>Downloaded Bootstrap:</strong> If using local files, change CSS/JS links to your local <code>css/bootstrap.min.css</code> and <code>js/bootstrap.bundle.min.js</code>.
+    </div>
+  </section>
+
+  <!-- 2. Bootstrap Structure and Files -->
+  <section class="demo-section">
+    <h2>2. Bootstrap Structure and Files</h2>
+    <ul>
+      <li><strong>css/</strong>: Bootstrap CSS files</li>
+      <li><strong>js/</strong>: Bootstrap JavaScript files</li>
+      <li><strong>icons/</strong>: Bootstrap Icons (if downloaded)</li>
+    </ul>
+    <div class="alert alert-success">
+      <code>bootstrap.bundle.min.js</code> is included at the end of this file for JS plugins.
+    </div>
+  </section>
+
+  <!-- 3. Fundamentals of Responsive Grid Layout -->
+  <section class="demo-section">
+    <h2>3. Responsive Grid Layout</h2>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 bg-primary text-white p-3 mb-2">Column 1</div>
+      <div class="col-12 col-md-6 col-lg-4 bg-secondary text-white p-3 mb-2">Column 2</div>
+      <div class="col-12 col-md-12 col-lg-4 bg-success text-white p-3 mb-2">Column 3</div>
+    </div>
+  </section>
+
+  <!-- 4. Column Layouts and Grid Classes -->
+  <section class="demo-section">
+    <h2>4. Column Layouts and Grid Classes</h2>
+    <div class="row mb-3">
+      <aside class="col-md-3 bg-light p-3">Sidebar (col-md-3)</aside>
+      <main class="col-md-9 bg-white p-3">Main Content (col-md-9)</main>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 bg-primary text-white p-3">Col 1</div>
+      <div class="col-sm-3 bg-secondary text-white p-3">Col 2</div>
+      <div class="col-sm-3 bg-success text-white p-3">Col 3</div>
+      <div class="col-sm-3 bg-danger text-white p-3">Col 4</div>
+    </div>
+  </section>
+
+  <!-- 5. Alignment and Reordering in Grid -->
+  <section class="demo-section">
+    <h2>5. Alignment and Reordering in Grid</h2>
+    <div class="row justify-content-center align-items-center" style="height: 100px;">
+      <div class="col-4 bg-info text-white text-center">Centered Content</div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-6 order-md-2 bg-warning p-3">Second on desktop</div>
+      <div class="col-md-6 order-md-1 bg-info p-3">First on desktop</div>
+    </div>
+  </section>
+
+  <!-- 6. Responsive Flexbox Utilities -->
+  <section class="demo-section">
+    <h2>6. Responsive Flexbox Utilities</h2>
+    <nav class="d-flex flex-column flex-md-row bg-dark p-3 mb-3">
+      <a class="text-white me-md-3 mb-2 mb-md-0" href="#">Home</a>
+      <a class="text-white me-md-3 mb-2 mb-md-0" href="#">About</a>
+      <a class="text-white" href="#">Contact</a>
+    </nav>
+    <div class="card d-flex flex-row justify-content-between align-items-center p-3">
+      <div>
+        <h5 class="card-title mb-0">Card Title</h5>
+        <p class="card-text">Some content here.</p>
+      </div>
+      <button class="btn btn-primary">Action</button>
+    </div>
+  </section>
+
+  <!-- 7. Typography -->
+  <section class="demo-section">
+    <h2>7. Typography</h2>
+    <h1 class="display-1">Display 1</h1>
+    <p class="lead">This is a lead paragraph.</p>
+    <p class="text-muted">This text is muted.</p>
+    <p class="fw-bold">Bold text</p>
+    <p class="text-uppercase">uppercase text</p>
+    <p class="text-lowercase">LOWERCASE TEXT</p>
+    <p class="text-capitalize">capitalize this sentence</p>
+  </section>
+
+  <!-- 8. Forms -->
+  <section class="demo-section">
+    <h2>8. Forms</h2>
+    <form class="mb-4">
+      <div class="mb-3">
+        <label class="form-label">Username</label>
+        <input type="text" class="form-control" placeholder="Enter username">
+      </div>
+      <div class="mb-3 input-group">
+        <span class="input-group-text">@</span>
+        <input type="email" class="form-control" placeholder="Email">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="terms">
+        <label class="form-check-label" for="terms">Accept Terms</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+    <form style="max-width: 350px;">
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
+      <button class="btn btn-success w-100" type="submit">Login</button>
+    </form>
+  </section>
+
+  <!-- 9. Buttons -->
+  <section class="demo-section">
+    <h2>9. Buttons</h2>
+    <div class="mb-3">
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-secondary">Secondary</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-danger">Danger</button>
+      <button class="btn btn-warning">Warning</button>
+      <button class="btn btn-info">Info</button>
+      <button class="btn btn-light">Light</button>
+      <button class="btn btn-dark">Dark</button>
+      <button class="btn btn-outline-primary">Outline Primary</button>
+    </div>
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-primary">Left</button>
+      <button type="button" class="btn btn-primary">Middle</button>
+      <button type="button" class="btn btn-primary">Right</button>
+    </div>
+    <div class="btn-group mt-3" role="group" aria-label="Toggle button group">
+      <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+      <label class="btn btn-outline-success" for="btncheck1">Toggle 1</label>
+      <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+      <label class="btn btn-outline-success" for="btncheck2">Toggle 2</label>
+    </div>
+  </section>
+
+  <!-- 10. Navbars and Navigation -->
+  <section class="demo-section">
+    <h2>10. Navbars and Navigation</h2>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <ul class="nav nav-tabs mb-2">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Tab 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Tab 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Tab 3</a>
+      </li>
+    </ul>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Pill 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pill 2</a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 11. Cards and Media Objects -->
+  <section class="demo-section">
+    <h2>11. Cards and Media Objects</h2>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="https://randomuser.me/api/portraits/men/1.jpg" class="card-img-top" alt="Profile">
+          <div class="card-body">
+            <h5 class="card-title">John Doe</h5>
+            <p class="card-text">Web Developer at Example Inc.</p>
+            <a href="#" class="btn btn-primary">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <div class="d-flex align-items-start">
+          <img src="https://randomuser.me/api/portraits/women/2.jpg" class="me-3 rounded-circle" alt="..." width="80">
+          <div>
+            <h5>Jane Smith</h5>
+            <p>Media object content goes here. This is aligned next to the image.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. Spacing Utilities -->
+  <section class="demo-section">
+    <h2>12. Spacing Utilities</h2>
+    <div class="m-3 p-2 bg-light">
+      <section class="mt-4 py-5 bg-primary text-white">Section with margin-top and padding-y</section>
+    </div>
+    <div class="row justify-content-center my-5">
+      <div class="col-md-4 p-4 m-3 bg-light rounded shadow">
+        <h2 class="mb-3">Basic</h2>
+        <p class="display-6">$9/mo</p>
+        <button class="btn btn-outline-primary w-100">Choose</button>
+      </div>
+      <div class="col-md-4 p-4 m-3 bg-light rounded shadow">
+        <h2 class="mb-3">Pro</h2>
+        <p class="display-6">$29/mo</p>
+        <button class="btn btn-primary w-100">Choose</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. Colors and Backgrounds -->
+  <section class="demo-section">
+    <h2>13. Colors and Backgrounds</h2>
+    <div class="row">
+      <div class="col bg-primary text-white p-3 m-2">Primary</div>
+      <div class="col bg-warning text-dark p-3 m-2">Warning</div>
+      <div class="col bg-success text-white p-3 m-2">Success</div>
+      <div class="col bg-danger text-white p-3 m-2">Danger</div>
+    </div>
+    <div class="container-fluid bg-dark bg-gradient text-white p-5 mt-3">
+      <h1>Gradient Dark Section</h1>
+      <p>This uses bg-gradient, bg-dark, and white text.</p>
+    </div>
+  </section>
+
+  <!-- 14. Display and Visibility -->
+  <section class="demo-section">
+    <h2>14. Display and Visibility</h2>
+    <div class="d-none d-md-block bg-info text-white p-3">
+      Visible on md and above
+    </div>
+    <div class="d-lg-flex bg-success text-white p-3 mt-2">
+      Visible as flex on large screens and above
+    </div>
+    <div class="d-none d-md-block bg-secondary text-white p-3 mt-2" style="width:200px;">
+      Sidebar (visible on md and up)
+    </div>
+  </section>
+
+  <!-- 15. Borders, Shadows, and Rounded Corners -->
+  <section class="demo-section">
+    <h2>15. Borders, Shadows, and Rounded Corners</h2>
+    <img src="https://randomuser.me/api/portraits/men/3.jpg" class="border border-primary border-3 rounded-circle mb-3" alt="Profile" width="120">
+    <div class="card shadow shadow-lg rounded-pill p-3" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Rounded Pill Card</h5>
+        <p class="card-text">This card has shadow and rounded-pill.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 16. Positioning Utilities -->
+  <section class="demo-section">
+    <h2>16. Positioning Utilities</h2>
+    <div class="mb-3" style="height: 150px;">
+      <div class="position-relative d-inline-block">
+        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Profile" width="120">
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+          5+
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 17. Icons with Bootstrap Icons -->
+  <section class="demo-section">
+    <h2>17. Icons with Bootstrap Icons</h2>
+    <footer class="bg-light text-center p-4 mb-3">
+      <a href="#" class="text-primary me-3"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-info me-3"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="text-danger"><i class="bi bi-instagram"></i></a>
+    </footer>
+    <button class="btn btn-primary"><i class="bi bi-house"></i></button>
+    <button class="btn btn-success"><i class="bi bi-check"></i></button>
+  </section>
+
+  <!-- 18. Bootstrap 5 JavaScript Plugins -->
+  <section class="demo-section">
+    <h2>18. Bootstrap 5 JavaScript Plugins</h2>
+    <!-- Modal Trigger Button -->
+    <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#myModal">
+      Open Modal
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal Title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            This is a Bootstrap modal!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Accordion -->
+    <div class="accordion mt-4" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            Accordion Item #1
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Content for the first accordion item.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Accordion Item #2
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Content for the second accordion item.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 19. Customization with Sass (Instructions) -->
+  <section class="demo-section">
+    <h2>19. Customization with Sass</h2>
+    <div class="alert alert-warning">
+      <strong>Instructions:</strong>
+      <ol>
+        <li>Initialize npm and install Bootstrap and Sass:
+          <pre><code>npm init -y
+npm install bootstrap@5.3.3 sass</code></pre>
+        </li>
+        <li>
+          Create <code>scss/custom.scss</code> with:
+          <pre><code>$primary: #ff5722;
+$border-radius: 2rem;
+@import "../node_modules/bootstrap/scss/bootstrap";</code></pre>
+        </li>
+        <li>
+          Compile SCSS to CSS:
+          <pre><code>npx sass scss/custom.scss css/custom.css</code></pre>
+        </li>
+        <li>
+          Link <code>css/custom.css</code> in your HTML instead of the CDN for custom Bootstrap styles.
+        </li>
+      </ol>
+    </div>
+  </section>
+</div>
+
+<!-- Fixed Footer Example for Positioning Utilities -->
+<footer class="bg-dark text-white text-center position-fixed bottom-0 w-100 py-3">
+  Fixed Footer (Position Utilities Example)
+</footer>
+
+<!-- Bootstrap 5 JS Bundle CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
